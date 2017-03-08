@@ -1,51 +1,33 @@
 package com.company;
 
 /**
- * Created by idejesus on 07/03/2017.
+ * Created by ian on 08/03/2017.
+ */
+
+/**
+ * Animal is the Super class
  */
 public class Animal {
 
-
+    /**
+     * Encapsulate the instance variables by making them private
+     */
     private String mName;
     private int mBody;
     private int mWeight;
+    private int mBrain;
 
-    public Animal(String name, int body, int weight) {
+    public Animal(String name, int body, int weight, int brain) {
         mName = name;
         mBody = body;
         mWeight = weight;
-    }
-
-    public String getName() {
-        return mName;
-    }
-
-    public void setName(String name) {
-        mName = name;
-    }
-
-    public int getBody() {
-        return mBody;
-    }
-
-    public void setBody(int body) {
-        mBody = body;
-    }
-
-    public int getWeight() {
-        return mWeight;
-    }
-
-    public void setWeight(int weight) {
-        mWeight = weight;
-    }
-
-    public  void move(int speed){
-        System.out.println("animal has moved at speed" + speed);
+        mBrain = brain;
     }
 
     public void eat(){
-        System.out.println("animal has eaten");
+        System.out.println("Animal eat()");
     }
-
+    public void move(){
+        System.out.println("Animal move()");
+    }
 }
